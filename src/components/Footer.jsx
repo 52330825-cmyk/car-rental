@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-400">
+    <footer className="bg-primary text-slate-300">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-8 md:flex-row">
         <p className="font-bold text-white">
           Cedar <span className="text-amber-400">Drive</span>

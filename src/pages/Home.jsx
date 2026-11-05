@@ -3,6 +3,21 @@ import CarCard from '../components/CarCard'
 import cars from '../data/cars'
 
 
+const reasons = [
+  {
+    title: 'Easy Booking',
+    text: 'Pick a car, choose your dates, and see the total price right away.',
+  },
+  {
+    title: 'Delivery to You',
+    text: 'Have your car delivered to your home, hotel, or the airport.',
+  },
+  {
+    title: 'Insurance Options',
+    text: 'Choose the coverage that gives you peace of mind on the road.',
+  },
+]
+
 function Home() {
   return (
     <>
@@ -39,6 +54,20 @@ function Home() {
           {cars.map((car) => (
             <CarCard key={car.id} car={car} />
           ))}
+        </div>
+      </section>
+      <section className="bg-white px-6 py-16">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-primary">Why Choose Us</h2>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {reasons.map((reason) => (
+              <article key={reason.title} className="rounded-xl bg-slate-50 p-6">
+                <h3 className="text-xl font-bold text-primary">{reason.title}</h3>
+                <p className="mt-2 text-slate-600">{reason.text}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
     </>

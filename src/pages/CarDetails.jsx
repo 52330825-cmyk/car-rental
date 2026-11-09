@@ -86,7 +86,7 @@ function CarDetails() {
           <span className="text-4xl font-bold text-primary">${car.pricePerDay}</span> / day
         </p>
 
-        {/* Specifications */}
+        
         <dl className="mt-6 grid grid-cols-3 gap-4 rounded-xl bg-white p-5 shadow">
           <div>
             <dt className="text-sm text-slate-500">Seats</dt>
@@ -113,7 +113,7 @@ function CarDetails() {
           </button>
         )}
 
-        {/* The form appears after Book Now, then the confirmation replaces it */}
+        
         {showForm && !isBooked && (
           <form onSubmit={handleSubmit} className="mt-6 space-y-4 rounded-xl bg-white p-5 shadow">
             <label className="block text-sm font-medium text-slate-600">

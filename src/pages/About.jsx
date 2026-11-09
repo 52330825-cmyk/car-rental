@@ -12,6 +12,26 @@ const values = [
     text: 'Our team is ready to help customers choose the right car and answer their questions.',
   },
 ]
+const stats = [
+  { number: '6+', label: 'Cars Available' },
+  { number: '500+', label: 'Happy Customers' },
+  { number: '3', label: 'Rental Services' },
+  { number: '24/7', label: 'Customer Support' },
+]
+const steps = [
+  {
+    title: 'Choose a Car',
+    text: 'Browse our cars and compare their prices and specifications.',
+  },
+  {
+    title: 'Pick Your Dates',
+    text: 'Open the car page, choose your pickup and return dates, and see the total price.',
+  },
+  {
+    title: 'Hit the Road',
+    text: 'Confirm your booking, then pick up the car or have it delivered to you.',
+  },
+]
 function About() {
   return(
 <>
@@ -38,9 +58,20 @@ function About() {
             Our goal is to remove the stress from renting a car by keeping every step simple,
             from choosing a car to picking it up.
           </p>
+          
         </div>
       </section>
-      <section className="mx-auto max-w-6xl px-6 pb-16">
+      <section className="bg-primary px-6 py-12 text-accent">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 text-center md:grid-cols-4">
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <p className="text-4xl font-bold text-secondary">{stat.number}</p>
+              <p className="mt-2 text-slate-300">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-3xl font-bold text-primary">What We Value</h2>
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -50,6 +81,23 @@ function About() {
               <p className="mt-2 text-slate-600">{value.text}</p>
             </article>
           ))}
+        </div>
+      </section>
+      <section className="bg-white px-6 py-16">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-primary">How It Works</h2>
+
+          <div className="mt-8 grid gap-8 md:grid-cols-3">
+           {steps.map((step, index) => (
+              <article key={step.title}>
+                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary text-xl font-bold text-primary">
+                  {index + 1}
+                </span>
+                <h3 className="mt-4 text-xl font-bold text-primary">{step.title}</h3>
+                <p className="mt-2 text-slate-600">{step.text}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

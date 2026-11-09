@@ -14,7 +14,7 @@ function Footer() {
           <Link to="/contact" className="hover:text-white">Contact</Link>
         </div>
 
-        {/* getFullYear keeps the copyright year up to date automatically */}
+        
         <p className="text-sm">© {new Date().getFullYear()} Cedar Drive</p>
       </div>
     </footer>

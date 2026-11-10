@@ -2,7 +2,7 @@
 
 Cedar Drive is a responsive car rental website built with React for the CSCI426 Advanced Web Programming course. Users can browse available cars, view the details of each car, calculate the rental price for their chosen dates, and contact the company.
 
-**Live website:** https://spiffy-rugelach-9cd4a9.netlify.app
+**Live website:** https://cedar-drive-car-rental.netlify.app/
 
 ## Features
 

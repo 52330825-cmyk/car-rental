@@ -49,7 +49,7 @@ function Contact() {
           Have a question about a car or a booking? Send us a message.
         </p>
       </section>
-       <section className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-2"></section>
+       <section className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-2">
          <div>
           <h2 className="text-3xl font-bold text-primary">Get in Touch</h2>
           <p className="mt-4 text-slate-600">
@@ -120,7 +120,7 @@ function Contact() {
             </p>
           )}
         </form>
-       
+       </section>
     </>
   )
 }
